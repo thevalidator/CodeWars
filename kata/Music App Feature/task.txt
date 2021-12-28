@@ -1,0 +1,32 @@
+It is very common nowadays using music apps such as Spotify, Shazam, iTunes...
+
+In that apps you are able to see every week the songs that have more plays, what is called a CHART. Your task is given a List of Songs (i am specifying you Song code right now) sort them following the same criteria that uses apps:
+
+On the top will be the song with more plays
+Gradually while you descend you will find the songs with less plays
+If two songs have the same plays (Very difficult!!) they are sorted algabetically by their titles
+Note: We consider a "play" adding to the Library list a song
+
+Song inner class have:
+
+Constructor which initializes a title, author and duration public Song(String t, String a, int d){...}
+Method getTimesThatRepated() that returns number of times the song have been played on the list
+Method setTimesThatRepated() that sets to timesThatRepated attribute the times a song have been played
+Method toString() that returns a string representation of a song
+** NOTE: Two songs are considered as equal when they have the same title and author **
+
+So now is the time to demonstrate your programming skills, your task is to develop on Library class (Not belonging the inner class) a method which returns a String representation of all the songs according to itself toString() explained before concating number of plays.
+
+      return "";
+   }```
+   
+An example:
+Library library = new Library(); //creating a library
+
+library.addSong(new Song("s1","a1",2)); //adding songs to library library.addSong(new Song("s2","a1",2)); library.addSong(new Song("s1","a1",2)); library.addSong(new Song("s1","a1",2)); library.addSong(new Song("s3","a3",2));
+
+//this is what method MUST return
+
+[title:s1, author:a1, duration:2] Plays -> 3 [title:s2, author:a1, duration:2] Plays -> 1 [title:s3, author:a3, duration:2] Plays -> 1
+
+```
